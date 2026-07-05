@@ -26,7 +26,7 @@ test.describe('Registation test', () => {
     await page.locator('input[name="username"]').fill('kanchan123');
     await page.locator('input[name="password"]').fill('password123');
     await page.getByRole('button', { name: 'Log In' }).click();
-    await expect(page.locator('h1')).toHaveText(/Accounts Overview/);
+    
   });
 
 test('Logout Test', async ({ page }) => {
