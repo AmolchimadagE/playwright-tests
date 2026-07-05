@@ -39,4 +39,9 @@ test('Logout Test', async ({ page }) => {
   await expect(page).toHaveTitle(/ParaBank \| Welcome/);
 });
 
+test('Take Screenshots', async ({ page }) => {
+  await page.goto('https://parabank.parasoft.com/');
+  await page.screenshot({path: 'screenshots/homepage.png', fullPage: true});
+})
+
 });
